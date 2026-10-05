@@ -2,86 +2,60 @@ import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import "./App.css";
 
 function Home() {
-
-  const navigate = useNavigate();
-
+const navigate = useNavigate();
   return (
     <div className="app">
-
       <header className="navbar">
-
         <div className="brand">
           <div className="brand-icon">SC</div>
-
           <div>
             <h2>SmartClinic</h2>
             <span>Queue made simple</span>
           </div>
         </div>
-
         <nav>
           <a href="#clinics">Find a Clinic</a>
           <a href="#how-it-works">How it works</a>
           <a href="#about">About</a>
-
-          <button
-            className="nav-login"
-            onClick={() => navigate("/login")}
-          >
+          <button className="nav-login  onClick={() => navigate("/login")}>
             Login
           </button>
         </nav>
-
       </header>
-
+    
       <main>
-
         <section className="hero">
-
           <div className="hero-left">
-
             <div className="location-label">
               <span className="pulse"></span>
               Clinics are updating live
             </div>
-
             <h1>
               Don't wait at the clinic.
               <br />
               <span>Know when to go.</span>
             </h1>
-
             <p className="hero-description">
               Check the live queue at nearby clinics, join remotely,
               and arrive when your turn is getting close.
             </p>
-
             <div className="search-box">
-
               <div className="search-icon">
                 ⌕
               </div>
-
               <div className="search-content">
-
                 <span>
                   Search for a clinic
                 </span>
-
                 <small>
                   Clinic name or location
                 </small>
-
               </div>
-
               <button>
                 Search
               </button>
-
             </div>
-
             <div className="quick-info">
-
               <div>
                 <strong>Live queue</strong>
                 <span>See current crowd</span>
@@ -420,133 +394,84 @@ function Home() {
               </div>
 
             </div>
-
-
             <div className="clinic-small-card">
-
               <div className="clinic-card-top">
-
                 <span className="status-dot"></span>
-
                 <span>
                   7 waiting
                 </span>
-
               </div>
-
               <h3>
                 LifeLine Clinic
               </h3>
-
               <p>
                 Palasia, Indore
               </p>
-
               <div className="clinic-card-bottom">
-
                 <span>
                   ~20 min wait
                 </span>
-
                 <button>
                   View
                 </button>
-
               </div>
-
             </div>
-
-
             <div className="clinic-small-card">
-
               <div className="clinic-card-top">
-
                 <span className="status-dot"></span>
-
                 <span>
                   4 waiting
                 </span>
-
               </div>
-
               <h3>
                 Health First
               </h3>
-
               <p>
                 Rau, Indore
               </p>
-
               <div className="clinic-card-bottom">
-
                 <span>
                   ~15 min wait
                 </span>
-
                 <button>
                   View
                 </button>
-
               </div>
-
             </div>
-
           </div>
-
         </section>
-
         <section className="cta">
-
           <div>
-
             <span>
               SMARTER CLINIC VISITS
             </span>
-
             <h2>
               Your time matters.
               <br />
               Don't spend it waiting.
             </h2>
-
           </div>
-
-          <button
-            onClick={() => navigate("/login")}
-          >
+          <button onClick ={() => navigate("/login")} >
             Find a clinic →
           </button>
-
         </section>
-
       </main>
-
       <footer>
-
         <div className="footer-brand">
-
           <div className="brand-icon">
             SC
           </div>
-
           <div>
-
             <h3>
               SmartClinic
             </h3>
-
             <span>
               Queue made simple
             </span>
-
           </div>
-
         </div>
-
       </footer>
-
     </div>
-  );
+);
 }
-
 export default Home;
