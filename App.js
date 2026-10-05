@@ -4,8 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./home";
 import Login from "./Login";
 import Register from "./Register";
-import Dashboard from "./Dashboard";
-import DoctorDashboard from "./DoctorDashboard";
 
 function App() {
   return (
